@@ -21,11 +21,57 @@
      </main>
     </body>
     <style>
+          :root {
+        --primary-color: #2A2A72;
+        --secondary-color: #FFA400;
+        --accent-color: #009FFD;
+        --dark-color: #232528;
+        --light-color: #F8F9FA;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
         body{
             background-color: #0038FF;
-            text-align: center;
             color: #FFFFFF;
         }
+        header {
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    nav h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    nav h1 span {
+        color: var(--secondary-color);
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 2rem;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: var(--secondary-color);
+    }
         main{
             padding: 30px;
             background-color: #0049FF;
@@ -43,9 +89,6 @@
         }
         label{
             font-family: Poppins;
-        }
-        header{
-            background-color: #000000;
         }
         p{
             font-size: 15px;
